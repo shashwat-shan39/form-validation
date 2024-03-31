@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form method="post" action="">
+            <div id="form-container">
+                <div id="sign-up">Sign Up</div>
+                <div id="form-body">
+                    <div class="form-field">
+                        <label>E-Mail</label><input type="email" name="email" />
+                    </div>
+                    <div class="form-field">
+                        <label>Password</label><input type="password" name="password" />
+                    </div>
+                    <div class="form-field">
+                        <label>Retype password</label><input type="password" name="repassword" />
+                    </div>
+                    <div class="form-field">
+                        <label>Full Name</label><input type="text" name="fullname" minlength="2" />
+                    </div>
+                    <div class="form-field">
+                        <label>are you a merchant ?</label><input class="cheak-box" type="checkbox" name="merchant" />
+                    </div>
+                    <div class="form-field">
+                        <button class="submit" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
